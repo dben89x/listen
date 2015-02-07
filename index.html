@@ -17,7 +17,9 @@
     <script type='text/template' id='dataTemplate'>
       {{#tracks}}
         <div class="ui segment">
-          <i class="fa fa-play" value = "{{title}}">{{title}}</i><hr>
+          <i class="fa fa-play" data-title="{{title}}" data-id='{{id}}'>{{title}}
+            <audio src="songs/{{file}}.mp3" id = 'music' preload="none"></audio>
+          </i><hr>
         </div>
       {{/tracks}}
     </script>
